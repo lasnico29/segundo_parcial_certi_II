@@ -57,7 +57,7 @@ public class sauce_demo_tests extends  base_test_sauce_demo{
     }
 
     @Test
-    public void checkSubTotalPriceOfProducts()
+    public void checkSubTotalPriceOfPurchase()
     {
         WebElement buttonAddSauceLabsBikeLight = new WebDriverWait(driver, Duration.ofSeconds(5))
                 .until(ExpectedConditions.presenceOfElementLocated(By.id("add-to-cart-sauce-labs-bike-light")));
