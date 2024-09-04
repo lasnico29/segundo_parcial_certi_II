@@ -17,8 +17,8 @@ public class restfull_booker_tests {
         RestAssured.baseURI = "https://restful-booker.herokuapp.com/booking";
         Response response = RestAssured.given().pathParam("id", "%")
                 .when().get("/{id}");
-        response.then().assertThat().statusCode(400);
         response.then().log().body();
+        response.then().assertThat().statusCode(400);
     }
 
     @Test
@@ -27,8 +27,8 @@ public class restfull_booker_tests {
         RestAssured.baseURI = "https://restful-booker.herokuapp.com/booking";
         Response response = RestAssured.given().pathParam("id", "1")
                 .when().get("/{id}");
-        response.then().assertThat().statusCode(200);
         response.then().log().body();
+        response.then().assertThat().statusCode(200);
     }
 
     @Test
@@ -115,7 +115,7 @@ public class restfull_booker_tests {
         if (statusCode != 400) {
             System.out.println("El código de estado obtenido no es 400. Código de estado recibido: " + statusCode);
         }
-        response.then().assertThat().statusCode(400);
         response.then().log().body();
+        response.then().assertThat().statusCode(400);
     }
 }
