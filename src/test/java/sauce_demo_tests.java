@@ -11,7 +11,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class sauce_demo_5_tests  extends  base_test_sauce_demo{
+public class sauce_demo_tests extends  base_test_sauce_demo{
 
     @Test
     public void Ordering_Filter_Price_High_To_Low_Test()
